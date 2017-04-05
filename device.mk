@@ -19,7 +19,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-# Screen density
+PRODUCT_ENFORCE_RRO_TARGETS := \
+    framework-res
+
+# AAPT
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_CONFIG := normal
 

@@ -240,8 +240,8 @@ on post-fs-data
     chmod 0770 /data/misc/port_bridge
 
     #create netmgr log dir
-    mkdir /data/misc/netmgr 0770 radio radio
-    chmod 0770 /data/misc/netmgr
+    mkdir /data/vendor/misc/netmgr 0770 radio radio
+    chmod 0770 /data/vendor/misc/netmgr
 
     # Create the directories used by CnE subsystem
     mkdir /data/connectivity 0771 system system
@@ -628,7 +628,7 @@ service qmuxd /system/bin/qmuxd
     group radio audio bluetooth gps nfc oem_2901
     disabled
 
-service netmgrd /system/bin/netmgrd
+service netmgrd /vendor/bin/netmgrd
     class main
     disabled
 

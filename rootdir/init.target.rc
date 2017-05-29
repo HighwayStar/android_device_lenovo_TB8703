@@ -109,7 +109,7 @@ service qrngp /system/bin/qrngp -f
 on property:sys.boot_completed=1
    start qrngp
 
-service qseecomd /system/bin/qseecomd
+service qseecomd /vendor/bin/qseecomd
    class core
    user root
    group root

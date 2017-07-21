@@ -511,6 +511,7 @@ service rmt_storage /system/bin/rmt_storage
     class core
     user root
     shutdown critical
+    ioprio rt 0
 
 service rfs_access /system/bin/rfs_access
    class core

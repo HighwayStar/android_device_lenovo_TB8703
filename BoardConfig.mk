@@ -176,9 +176,6 @@ include device/qcom/sepolicy/sepolicy.mk
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
 
-# Sensors
-USE_SENSOR_MULTI_HAL := true
-
 # Power
 TARGET_POWERHAL_VARIANT := qcom
 

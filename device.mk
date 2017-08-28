@@ -118,7 +118,7 @@ PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
-# FS config
+# For config.fs
 PRODUCT_PACKAGES += \
     fs_config_files
 

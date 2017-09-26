@@ -602,4 +602,4 @@ vendor/lib/libwvdrm_L3.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # Wi-Fi
-bin/wcnss_service
+bin/wcnss_service:vendor/bin/wcnss_service

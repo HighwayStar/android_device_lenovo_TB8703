@@ -158,6 +158,9 @@ BOARD_USES_QCOM_HARDWARE := true
 # Sensors
 USE_SENSOR_MULTI_HAL := true
 
+# Power
+TARGET_POWERHAL_VARIANT := qcom
+
 # TWRP
 ifeq ($(WITH_TWRP),true)
 include $(DEVICE_PATH)/twrp.mk

@@ -93,6 +93,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
+    libqdMetaData.system \
     libtinyxml \
     memtrack.msm8953
 

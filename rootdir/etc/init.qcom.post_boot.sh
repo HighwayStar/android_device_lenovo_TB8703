@@ -2219,7 +2219,7 @@ case "$target" in
         start mpdecision
     ;;
     "msm8916")
-        setprop sys.post_boot.parsed 1
+        setprop vendor.post_boot.parsed 1
     ;;
     "msm8937" | "msm8953")
         echo 128 > /sys/block/mmcblk0/bdi/read_ahead_kb
@@ -2228,7 +2228,7 @@ case "$target" in
         echo 128 > /sys/block/dm-1/queue/read_ahead_kb
         echo 128 > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
         echo 128 > /sys/block/mmcblk0rpmb/queue/read_ahead_kb
-        setprop sys.post_boot.parsed 1
+        setprop vendor.post_boot.parsed 1
         start gamed
     ;;
     "msm8974")
@@ -2236,7 +2236,7 @@ case "$target" in
         echo 512 > /sys/block/mmcblk0/bdi/read_ahead_kb
     ;;
     "msm8994" | "msm8992" | "msm8996" | "msm8998")
-        setprop sys.post_boot.parsed 1
+        setprop vendor.post_boot.parsed 1
     ;;
     "apq8084")
         rm /data/system/perfd/default_values

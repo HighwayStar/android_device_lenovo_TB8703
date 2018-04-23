@@ -1134,6 +1134,8 @@ case "$target" in
                         ;;
                 esac
 
+		echo 0 > /proc/sys/kernel/sched_boost
+
                 #scheduler settings
                 echo 3 > /proc/sys/kernel/sched_window_stats_policy
                 echo 3 > /proc/sys/kernel/sched_ravg_hist_size

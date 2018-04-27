@@ -71,11 +71,11 @@ case "$baseband" in
 
     case "$datamode" in
         "tethered")
-            start qti
+            start vendor.dataqti
             start port-bridge
             ;;
         "concurrent")
-            start qti
+            start vendor.dataqti
             start netmgrd
             start port-bridge
             ;;

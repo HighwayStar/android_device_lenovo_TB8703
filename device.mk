@@ -61,6 +61,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjni_livedisplay
 
+# FM
+PRODUCT_PACKAGES += \
+    FMRadio \
+    libfmjni
+
 # FS config
 PRODUCT_PACKAGES += \
     fs_config_files

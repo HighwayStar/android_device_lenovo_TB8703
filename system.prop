@@ -171,6 +171,7 @@ telephony.lteOnCdmaDevice=1
 # System props for bluetooh
 # System prop to turn on hfp client
 bluetooth.hfp.client=1
+qcom.bluetooth.soc=smd
 
 #Simulate sdcard on /data/media
 #

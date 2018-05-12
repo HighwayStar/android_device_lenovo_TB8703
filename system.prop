@@ -1,3 +1,99 @@
+# audio flags
+# Reduce client buffer size for fast audio output tracks
+af.fast_track_multiplier=1
+
+#Low latency audio buffer size in frames
+audio_hal.period_size=192
+
+##fluencetype can be "fluence" or "fluencepro" or "none"
+ro.qc.sdk.audio.fluencetype=fluence
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+persist.audio.fluence.speaker=false
+
+#disable tunnel encoding
+tunnel.audio.encode=false
+
+#Buffer size in kbytes for compress offload playback
+audio.offload.buffer.size.kb=64
+
+#Minimum duration for offload playback in secs
+audio.offload.min.duration.secs=30
+
+#Enable offload audio video playback by default
+audio.offload.video=true
+
+#Enable 16 bit PCM offload by default
+audio.offload.pcm.16bit.enable=true
+
+#Enable 24 bit PCM offload by default
+audio.offload.pcm.24bit.enable=true
+
+#Enable audio track offload by default
+audio.offload.track.enable=true
+
+#Enable music through deep buffer
+audio.deep_buffer.media=true
+
+#QC property used when calculating client heap size in audio flinger
+audio.heap.size.multiplier=7
+
+#enable voice path for PCM VoIP by default
+use.voice.path.for.pcm.voip=true
+
+#Enable multi channel aac through offload
+audio.offload.multiaac.enable=true
+
+#Enable DS2, Hardbypass feature for Dolby
+audio.dolby.ds2.enabled=true
+audio.dolby.ds2.hardbypass=true
+
+#Disable Multiple offload sesison
+audio.offload.multiple.enabled=false
+
+#Disable Compress passthrough playback
+audio.offload.passthrough=false
+
+#Disable surround sound recording
+ro.qc.sdk.audio.ssr=false
+
+#enable dsp gapless mode by default
+audio.offload.gapless.enabled=true
+
+#enable pbe effects
+audio.safx.pbe.enabled=true
+
+#parser input buffer size(256kb) in byte stream mode
+audio.parser.ip.buffer.size=262144
+
+#enable downsampling for multi-channel content > 48Khz
+audio.playback.mch.downsample=true
+
+#enable software decoders for ALAC and APE.
+use.qti.sw.alac.decoder=true
+use.qti.sw.ape.decoder=true
+
+#property for AudioSphere Post processing
+audio.pp.asphere.enabled=false
+
+#Audio voice concurrency related flags
+voice.playback.conc.disabled=true
+voice.record.conc.disabled=false
+voice.voip.conc.disabled=true
+
+#Decides the audio fallback path during voice call,
+#deep-buffer and fast are the two allowed fallback paths now.
+voice.conc.fallbackpath=deep-buffer
+
+#Disable speaker protection by default
+persist.speaker.prot.enable=false
+
+#Enable HW AAC Encoder by default
+qcom.hw.aac.encoder=true
+
+#flac sw decoder 24 bit decode capability
+flac.sw.decoder.24bit.support=true
+
 #
 # system.prop for msm8953
 #

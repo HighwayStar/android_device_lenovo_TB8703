@@ -142,6 +142,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 
+# RIL
+TARGET_RIL_VARIANT := caf
+
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
 

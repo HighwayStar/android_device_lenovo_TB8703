@@ -148,6 +148,12 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc
 
+# RIL
+PRODUCT_PACKAGES += \
+    libcnefeatureconfig \
+    librmnetctl \
+    libxml2
+
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.msm8953

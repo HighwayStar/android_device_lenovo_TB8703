@@ -15,6 +15,8 @@ MM_CAM_FILES := \
 # System header file path prefix
 LOCAL_CFLAGS += -DSYSTEM_HEADER_PREFIX=sys
 
+
+
 ifeq ($(strip $(TARGET_USES_ION)),true)
     LOCAL_CFLAGS += -DUSE_ION
 endif
@@ -40,6 +42,7 @@ LOCAL_C_INCLUDES := \
     system/media/camera/include \
 
 LOCAL_CFLAGS += -DCAMERA_ION_HEAP_ID=ION_IOMMU_HEAP_ID
+LOCAL_CFLAGS += -DCONFIG_MACH_LENOVO_TB8703
 LOCAL_C_INCLUDES+= $(kernel_includes)
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
 

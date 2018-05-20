@@ -9,6 +9,8 @@ LOCAL_CFLAGS+= -D_ANDROID_ -DQCAMERA_REDEFINE_LOG
 
 LOCAL_CFLAGS += -Wall -Wextra -Werror -Wno-unused-parameter
 
+LOCAL_CFLAGS += -DCONFIG_MACH_LENOVO_TB8703
+
 LOCAL_C_INCLUDES+= $(kernel_includes)
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
 

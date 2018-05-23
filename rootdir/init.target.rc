@@ -247,7 +247,7 @@ service dtseagleservice /system/bin/dts_eagle_service
     group audio media
     disabled
 
-service adsprpcd /system/bin/adsprpcd
+service adsprpcd /vendor/bin/adsprpcd
     class main
     user media
     group media

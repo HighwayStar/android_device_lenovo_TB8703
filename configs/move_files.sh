@@ -10,5 +10,5 @@ done
 
 
 # Move variant-specific blobs
-mv /system/etc/firmware/variant/$baseband/a506_zap* /system/etc/firmware/
-rm -rf /system/etc/firmware/variant
+mv /system/vendor/firmware/variant/$baseband/a506_zap* /system/vendor/firmware/
+rm -rf /system/vendor/firmware/variant

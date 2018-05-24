@@ -400,22 +400,22 @@ vendor/lib/hw/vulkan.msm8953.so|bba3ecd59bbb0fc708bc452c7dc205f290d2a3ce
 vendor/lib64/hw/vulkan.msm8953.so|20319d49573abbbc59ff812bb42157b7ffb960a2
 
 # Graphics firmware TB-8703X
-etc/firmware/a506_zap.b00:etc/firmware/variant/msm/a506_zap.b00
-etc/firmware/a506_zap.b01:etc/firmware/variant/msm/a506_zap.b01
-etc/firmware/a506_zap.b02:etc/firmware/variant/msm/a506_zap.b02
-etc/firmware/a506_zap.elf:etc/firmware/variant/msm/a506_zap.elf
-etc/firmware/a506_zap.mdt:etc/firmware/variant/msm/a506_zap.mdt
+etc/firmware/a506_zap.b00:vendor/firmware/variant/msm/a506_zap.b00
+etc/firmware/a506_zap.b01:vendor/firmware/variant/msm/a506_zap.b01
+etc/firmware/a506_zap.b02:vendor/firmware/variant/msm/a506_zap.b02
+etc/firmware/a506_zap.elf:vendor/firmware/variant/msm/a506_zap.elf
+etc/firmware/a506_zap.mdt:vendor/firmware/variant/msm/a506_zap.mdt
 
 # Graphics firmware TB-8703F
-etc/firmware/a506_zap.b00:etc/firmware/variant/apq/a506_zap.b00
-etc/firmware/a506_zap.b01:etc/firmware/variant/apq/a506_zap.b01
-etc/firmware/a506_zap.b02:etc/firmware/variant/apq/a506_zap.b02
-etc/firmware/a506_zap.elf:etc/firmware/variant/apq/a506_zap.elf
-etc/firmware/a506_zap.mdt:etc/firmware/variant/apq/a506_zap.mdt
+etc/firmware/a506_zap.b00:vendor/firmware/variant/apq/a506_zap.b00
+etc/firmware/a506_zap.b01:vendor/firmware/variant/apq/a506_zap.b01
+etc/firmware/a506_zap.b02:vendor/firmware/variant/apq/a506_zap.b02
+etc/firmware/a506_zap.elf:vendor/firmware/variant/apq/a506_zap.elf
+etc/firmware/a506_zap.mdt:vendor/firmware/variant/apq/a506_zap.mdt
 
 # Graphics firmware common
-etc/firmware/a530_pfp.fw
-etc/firmware/a530_pm4.fw
+etc/firmware/a530_pfp.fw:vendor/firmware/a530_pfp.fw
+etc/firmware/a530_pm4.fw:vendor/firmware/a530_pm4.fw
 
 # IMS - from oneplus3 OB24 / OB15
 bin/ims_rtp_daemon

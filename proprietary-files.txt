@@ -37,7 +37,7 @@ vendor/lib64/libbtnv.so|21c928e2d68980008ce8d8d1312ded932e79768d
 
 
 # Camera
-bin/mm-qcamera-daemon
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
 vendor/lib/libchromaflash.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
@@ -212,16 +212,16 @@ vendor/lib/libmmcamera_qtech_f5695ak_eeprom.so
 vendor/lib/libmmcamera_qtech_imx219_fx219aq_eeprom.so
 
 # Camera firmware
-etc/firmware/cpp_firmware_v1_5_0.fw
+etc/firmware/cpp_firmware_v1_5_0.fw:vendor/firmware/cpp_firmware_v1_5_0.fw
 
 # Camera flash
 vendor/lib/libflash_pmic.so
 
 # Camera sensors
-etc/camera/msm8953_camera.xml
-etc/camera/ov5695_f5695ak_chromatix.xml
-etc/camera/ov5695_ccbfl05006_chromatix.xml
-etc/camera/imx219_fx219aq_chromatix.xml
+etc/camera/msm8953_camera.xml:vendor/etc/camera/msm8953_camera.xml
+etc/camera/ov5695_f5695ak_chromatix.xml:vendor/etc/camera/ov5695_f5695ak_chromatix.xml
+etc/camera/ov5695_ccbfl05006_chromatix.xml:vendor/etc/camera/ov5695_ccbfl05006_chromatix.xml
+etc/camera/imx219_fx219aq_chromatix.xml:vendor/etc/camera/imx219_fx219aq_chromatix.xml
 vendor/lib/libmmcamera_ov5695_f5695ak.so
 vendor/lib/libmmcamera_ov5695_ccbfl05006.so
 vendor/lib/libmmcamera_imx219_fx219aq.so

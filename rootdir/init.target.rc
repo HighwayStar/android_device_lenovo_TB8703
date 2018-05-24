@@ -131,7 +131,7 @@ service gamed /system/vendor/bin/gamed
    disabled
    socket gamed seqpacket 0640 system system
 
-service thermal-engine /system/vendor/bin/thermal-engine
+service thermal-engine /vendor/bin/thermal-engine
    class main
    user root
    socket thermal-send-client stream 0666 system system

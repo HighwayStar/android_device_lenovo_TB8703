@@ -692,3 +692,5 @@ vendor/lib/libWVStreamControlAPI_L3.so
 vendor/lib/libwvdrm_L3.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
+# Wi-Fi
+bin/wcnss_service

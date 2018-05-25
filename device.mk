@@ -223,8 +223,7 @@ PRODUCT_PACKAGES += \
 # WiFi
 PRODUCT_PACKAGES += \
     libqsap_sdk \
-    libQWiFiSoftApCfg \
-    wcnss_service
+    libQWiFiSoftApCfg
 
 PRODUCT_PACKAGES += \
     hostapd \

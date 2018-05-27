@@ -107,6 +107,9 @@ ro.sys.sdcardfs=true
 # Time services
 persist.timed.enable=true
 
+# Usb
+persist.sys.usb.config.extra=none
+
 # WiFi
 wifi.interface=wlan0
 

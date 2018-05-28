@@ -461,12 +461,21 @@ vendor/lib64/librs_adreno_sha1.so
 vendor/lib64/libscale.so
 vendor/lib64/libuiblur.so
 
-# Graphics firmware
-etc/firmware/a506_zap.b00
-etc/firmware/a506_zap.b01
-etc/firmware/a506_zap.b02
-etc/firmware/a506_zap.elf
-etc/firmware/a506_zap.mdt
+# Graphics firmware TB-8703X
+etc/firmware/a506_zap.b00:etc/firmware/variant/msm/a506_zap.b00
+etc/firmware/a506_zap.b01:etc/firmware/variant/msm/a506_zap.b01
+etc/firmware/a506_zap.b02:etc/firmware/variant/msm/a506_zap.b02
+etc/firmware/a506_zap.elf:etc/firmware/variant/msm/a506_zap.elf
+etc/firmware/a506_zap.mdt:etc/firmware/variant/msm/a506_zap.mdt
+
+# Graphics firmware TB-8703F
+etc/firmware/a506_zap.b00:etc/firmware/variant/apq/a506_zap.b00
+etc/firmware/a506_zap.b01:etc/firmware/variant/apq/a506_zap.b01
+etc/firmware/a506_zap.b02:etc/firmware/variant/apq/a506_zap.b02
+etc/firmware/a506_zap.elf:etc/firmware/variant/apq/a506_zap.elf
+etc/firmware/a506_zap.mdt:etc/firmware/variant/apq/a506_zap.mdt
+
+# Graphics firmware common
 etc/firmware/a530_pfp.fw
 etc/firmware/a530_pm4.fw
 

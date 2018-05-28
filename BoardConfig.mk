@@ -164,6 +164,9 @@ USE_SENSOR_MULTI_HAL := true
 # Power
 TARGET_POWERHAL_VARIANT := qcom
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+
 # TWRP
 ifeq ($(WITH_TWRP),true)
 include $(DEVICE_PATH)/twrp.mk

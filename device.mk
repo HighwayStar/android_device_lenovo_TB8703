@@ -87,6 +87,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# Firmware patch
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/move_files.sh:install/bin/move_files.sh
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8953 \

@@ -128,6 +128,11 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 TARGET_USES_ION := true
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_tb8703
+TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
+TARGET_RECOVERY_DEVICE_MODULES := libinit_tb8703
+
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci androidboot.selinux=permissive

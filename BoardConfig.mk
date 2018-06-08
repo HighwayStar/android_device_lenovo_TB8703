@@ -168,6 +168,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 # RIL
 TARGET_RIL_VARIANT := caf
 
+# SELinux
+include device/qcom/sepolicy/sepolicy.mk
+
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
 

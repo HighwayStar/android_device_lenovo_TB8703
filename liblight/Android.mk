@@ -25,4 +25,8 @@ LOCAL_CLANG  := true
 LOCAL_MODULE := lights.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_TAGS := optional
 
+ifneq (,$(filter TB8703,$(TARGET_DEVICE)))
+    LOCAL_CFLAGS += -DWHITE_LED
+endif
+
 include $(BUILD_SHARED_LIBRARY)

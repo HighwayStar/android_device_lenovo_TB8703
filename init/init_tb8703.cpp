@@ -28,6 +28,7 @@
  */
 
 #include <stdlib.h>
+#include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 #include <stdio.h>
@@ -35,10 +36,9 @@
 
 #include "vendor_init.h"
 #include "property_service.h"
-#include "log.h"
-#include "util.h"
 
 #define PROP_BOOT_BASEBAND "ro.boot.baseband"
+using android::base::GetProperty;
 
 void property_override(char const prop[], char const value[])
 {
@@ -53,7 +53,7 @@ void property_override(char const prop[], char const value[])
 
 static void set_fingerprint()
 {
-	std::string baseband = property_get(PROP_BOOT_BASEBAND);
+	std::string baseband = GetProperty(PROP_BOOT_BASEBAND, "");
 	if (baseband == "apq") {
 		property_override("ro.build.description", "msm8953_64-user 6.0.1 MMB29M 65 release-keys");
 		property_override("ro.build.product", "TB-8703F");

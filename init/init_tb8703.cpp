@@ -64,9 +64,9 @@ static void set_fingerprint()
 	if (baseband == "apq") {
 		property_override("ro.build.description", "msm8953_64-user 6.0.1 MMB29M 65 release-keys");
 		property_override("ro.build.product", "TB-8703F");
-		property_override("ro.product.device", "TB-8703F");
-		property_override("ro.build.fingerprint", "Lenovo/TB-8703F/TB-8703F:6.0.1/MMB29M/TB-8703F_USR_S035_180326_Q1241_ROW:user/release-keys");
-		property_override("ro.product.model", "Lenovo TB-8703F");
+		property_override_dual("ro.product.device", "ro.vendor.product.device", "TB-8703F");
+		property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Lenovo/TB-8703F/TB-8703F:6.0.1/MMB29M/TB-8703F_USR_S035_180326_Q1241_ROW:user/release-keys");
+		property_override_dual("ro.product.model", "ro.vendor.product.model", "Lenovo TB-8703F");
 		property_override("ro.qc.sdk.audio.fluencetype", "none");
 		property_override("persist.audio.fluence.speaker", "true");
 	//for installing stock OTA with TWRP
@@ -74,9 +74,9 @@ static void set_fingerprint()
     } else if(baseband == "msm") {
 		property_override("ro.build.description", "msm8953_64-user 6.0.1 MMB29M 559 release-keys");
 		property_override("ro.build.product", "TB-8703X");
-		property_override("ro.product.device", "TB-8703X");
-		property_override("ro.build.fingerprint", "Lenovo/TB-8703X/TB-8703X:6.0.1/MMB29M/TB-8703X_USR_S037_180404_Q1241_ROW:user/release-keys");
-		property_override("ro.product.model", "Lenovo TB-8703X");
+		property_override_dual("ro.product.device", "ro.vendor.product.device", "TB-8703X");
+		property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Lenovo/TB-8703X/TB-8703X:6.0.1/MMB29M/TB-8703X_USR_S037_180404_Q1241_ROW:user/release-keys");
+		property_override_dual("ro.product.model", "ro.vendor.product.model", "Lenovo TB-8703X");
 		property_override("ro.qc.sdk.audio.fluencetype", "fluence");
 		property_override("persist.audio.fluence.speaker", "false");
 		//for installing stock OTA with TWRP

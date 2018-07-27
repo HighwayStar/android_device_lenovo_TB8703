@@ -189,6 +189,10 @@ TARGET_POWERHAL_VARIANT := qcom
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
+# Shim
+TARGET_LD_SHIM_LIBS := \
+    /vendor/bin/mm-qcamera-daemon|libshims_camera.so
+
 # TWRP
 ifeq ($(WITH_TWRP),true)
 include $(DEVICE_PATH)/twrp.mk

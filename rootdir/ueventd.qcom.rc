@@ -272,3 +272,7 @@
 
 # Lenovo specific entries
 /sys/devices/virtual/graphics/fb0 idle_time 0664 system graphics
+
+# Lenovo led
+/sys/class/leds/red   blink      0644 system  system
+/sys/class/leds/red   brightness 0644 system  system

@@ -113,9 +113,6 @@ on boot
     #Create NETMGR daemon socket area
     mkdir /dev/socket/netmgr 0750 radio radio
 
-    # Create ipacm log dir
-    mkdir /data/vendor/ipa 0770 radio radio
-    chmod 0770 /data/vendor/ipa
 
     setprop wifi.interface wlan0
 
@@ -253,6 +250,10 @@ on post-fs-data
     #create port-bridge log dir
     mkdir /data/misc/port_bridge 0770 radio radio
     chmod 0770 /data/misc/port_bridge
+
+    # Create ipacm log dir
+    mkdir /data/vendor/ipa 0770 radio radio
+    chmod 0770 /data/vendor/ipa
 
     #create netmgr log dir
     mkdir /data/vendor/netmgr 0770 radio radio

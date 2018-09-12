@@ -34,6 +34,8 @@ persist.vendor.camera.display.umax=1920x1080
 persist.vendor.camera.display.lmax=1280x720
 camera.lowpower.record.enable=1
 vidc.enc.dcvs.extra-buff-count=2
+# disable gyroscope to prevent invalid access log messages
+persist.camera.gyro.disable=1
 
 # CNE
 persist.vendor.cne.feature=1

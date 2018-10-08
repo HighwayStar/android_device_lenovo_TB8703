@@ -29,9 +29,6 @@
 
 import init.carrier.rc
 
-on early-init
-    symlink /data/tombstones /tombstones
-
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
@@ -50,11 +47,6 @@ on fs
     restorecon_recursive /mnt/vendor/persist
 
 on post-fs-data
-    mkdir /data/tombstones 0771 system system
-    mkdir /tombstones/modem 0771 system system
-    mkdir /tombstones/lpass 0771 system system
-    mkdir /tombstones/wcnss 0771 system system
-    mkdir /tombstones/dsps 0771 system system
     mkdir /persist/data/sfs 0700 system system
     mkdir /persist/data/tz 0700 system system
     mkdir /data/misc/dts 0770 media audio

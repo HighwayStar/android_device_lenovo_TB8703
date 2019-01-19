@@ -27,8 +27,7 @@ vendor.audio.safx.pbe.enabled=true
 vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
-qcom.bluetooth.soc=smd
-ro.qualcomm.bt.hci_transport=smd
+vendor.qcom.bluetooth.soc=smd
 
 # Camera
 persist.vendor.camera.display.umax=1920x1080

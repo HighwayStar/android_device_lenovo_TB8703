@@ -1,4 +1,4 @@
-/* Copyright (c) 2015, 2017 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2011-2015, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -9,7 +9,7 @@
  *       copyright notice, this list of conditions and the following
  *       disclaimer in the documentation and/or other materials provided
  *       with the distribution.
- *     * Neither the name of The Linux Foundation, nor the names of its
+ *     * Neither the name of The Linux Foundatoin, nor the names of its
  *       contributors may be used to endorse or promote products derived
  *       from this software without specific prior written permission.
  *
@@ -24,60 +24,22 @@
  * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
  * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
  */
+#ifndef _GNSSPPS_H
+#define _GNSSPPS_H
 
-#ifndef __ICLIENTINDEX_H__
-#define __ICLIENTINDEX_H__
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-#include <list>
+/*  opens the device and fetches from PPS source */
+int initPPS(char *devname);
+/* updates the fine time stamp */
+int getPPS(struct timespec *current_ts, struct timespec *current_boottime, struct timespec *last_boottime);
+/* stops fetching and closes the device */
+void deInitPPS();
 
-namespace loc_core
-{
-
-template  <typename CT, typename DIT>
-
-class IClientIndex {
-public:
-
-    // Checks if client is subscribed
-    virtual bool isSubscribedClient (CT client) = 0;
-
-    // gets subscription list
-    virtual void getSubscribedList (CT client, std :: list <DIT> & out) = 0;
-
-    // removes an entry
-    virtual int remove (CT client) = 0;
-
-    // removes std :: list of data items and returns a list of clients
-    // removed if any.
-    virtual void remove
-    (
-        const std :: list <DIT> & r,
-        std :: list <CT> & out
-    ) = 0;
-
-    // removes list of data items indexed by client and returns list
-    // of data items removed if any.
-    virtual void remove
-    (
-        CT client,
-        const std :: list <DIT> & r,
-        std :: list <DIT> & out
-    ) = 0;
-
-    // adds/modifies entry in  map and returns new data items added.
-    virtual void add
-    (
-        CT client,
-        const std :: list <DIT> & l,
-        std :: list <DIT> & out
-    ) = 0;
-
-    // dtor
-    virtual ~IClientIndex () {}
-};
-
-} // namespace loc_core
-
-#endif // #ifndef __ICLIENTINDEX_H__
+#ifdef __cplusplus
+}
+#endif
+#endif

@@ -82,6 +82,9 @@ persist.data.mode=concurrent
 # Time services
 persist.delta_time.enable=true
 
+# Time services
+persist.vendor.delta_time.enable=true
+
 # Usb
 persist.sys.usb.config.extra=none
 
